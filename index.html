@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informationsblatt für Lehrkräfte: Der KI-Lern-Assistent</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #212529;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .worksheet-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            box-shadow: none;
+            padding: 40px;
+        }
+        .header {
+            position: relative;
+            text-align: left;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            padding-right: 150px;
+        }
+        .header h1 {
+            color: #000000;
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0;
+            margin-top: 20px;
+        }
+        .header p {
+            font-size: 16px;
+            color: #343a40;
+            margin-top: 8px;
+        }
+        .header-logo {
+            position: absolute;
+            top: 1px;
+            right: 0;
+            transform: none;
+            height: 60px;
+            width: auto;
+        }
+        .intro-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .intro-text {
+            flex: 1;
+        }
+        .teacher-image-container {
+            flex: 0 0 200px;
+            text-align: center;
+        }
+        .teacher-image {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .teacher-caption {
+            font-size: 13px;
+            color: #6c757d;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section p {
+            font-size: 15px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000000;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 8px;
+            margin-top: 45px;
+            margin-bottom: 20px;
+        }
+        .features-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .feature-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .feature-icon {
+            width: 8px;
+            height: 8px;
+            background-color: #007bff;
+            border-radius: 50%;
+            margin-right: 15px;
+            margin-top: 8px;
+            flex-shrink: 0;
+        }
+        .feature-content {
+            flex: 1;
+        }
+        .feature-item h3 {
+            margin-top: 0;
+            font-size: 16px;
+            font-weight: 700;
+            color: #005A9C;
+            margin-bottom: 8px;
+        }
+        .feature-item p {
+            margin-bottom: 0;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #495057;
+            text-align: justify;
+        }
+        .info-box {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 25px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+        .info-box p {
+            font-size: 16px;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: 500;
+            border: 1px solid #0069d9;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #000000;
+            text-align: center;
+            font-size: 12px;
+            color: #6c757d;
+        }
+        
+        @media (max-width: 768px) {
+            .intro-section {
+                flex-direction: column;
+            }
+            .teacher-image-container {
+                flex: 0 0 auto;
+                margin: 0 auto;
+            }
+            .worksheet-container {
+                padding: 20px;
+            }
+            .header {
+                padding-right: 0;
+            }
+            .header-logo {
+                position: static;
+                display: block;
+                margin: 0 auto 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="worksheet-container">
+        <div class="header">
+            <img src="GSM.png" alt="GSM Logo" class="header-logo">
+            <h1>Der KI-Lern-Assistent für den Unterricht</h1>
+            <p>Ein Werkzeug zur Differenzierung und Förderung der Selbstständigkeit</p>
+        </div>
+
+        <div class="intro-section">
+            <div class="intro-text">
+                <div class="section">
+                    <p>Liebe Kolleginnen und Kollegen,</p>
+                    <p>
+                        dieses Informationsblatt stellt den KI-Lern-Assistenten vor – ein digitales Werkzeug, das entwickelt wurde, um den Herausforderungen der Binnendifferenzierung zu begegnen und Schülerinnen und Schüler beim selbstständigen Lernen zu unterstützen. Der Assistent dient als interaktiver, immer verfügbarer Tutor, der individuelle Lernwege ermöglicht und uns als Lehrkräfte im Schulalltag entlasten kann.
+                    </p>
+                </div>
+            </div>
+            <div class="teacher-image-container">
+                <img src="Lehrer.png" alt="Lehrkraft mit digitalen Werkzeugen" class="teacher-image">
+                <p class="teacher-caption">Moderne Lehrmethoden mit KI-Unterstützung</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Pädagogischer Mehrwert und Einsatzszenarien</h2>
+            <ul class="features-list">
+                <li class="feature-item">
+                    <div class="feature-icon"></div>
+                    <div class="feature-content">
+                        <h3>Individuelle Förderung in Echtzeit</h3>
+                        <p>Der Assistent kann komplexe Sachverhalte wie die Fotosynthese oder den Satz des Pythagoras auf verschiedenen Niveaus erklären. Dies ermöglicht es, Schüler dort abzuholen, wo sie stehen – sei es zur Wiederholung von Grundlagen oder zur Vertiefung für Leistungsstärkere.</p>
+                    </div>
+                </li>
+                <li class="feature-item">
+                    <div class="feature-icon"></div>
+                    <div class="feature-content">
+                        <h3>Visualisierung zur Verständnisförderung</h3>
+                        <p>Abstrakte Konzepte werden greifbarer, wenn sie visualisiert werden. Der Assistent kann auf Anweisung schematische Darstellungen (z.B. den Aufbau einer Zelle, einen Stromkreis) erzeugen, die als Diskussionsgrundlage oder zur Veranschaulichung im Unterricht dienen können.</p>
+                    </div>
+                </li>
+                <li class="feature-item">
+                    <div class="feature-icon"></div>
+                    <div class="feature-content">
+                        <h3>Hilfestellung statt fertiger Lösungen</h3>
+                        <p>In Übungsphasen erhalten Schüler bei Bedarf einen Denkanstoß oder einen methodischen Hinweis, anstatt die Lösung direkt präsentiert zu bekommen. Dies fördert die Problemlösekompetenz und das eigenständige Denken.</p>
+                    </div>
+                </li>
+                <li class="feature-item">
+                    <div class="feature-icon"></div>
+                    <div class="feature-content">
+                        <h3>Gezielte Vorbereitung und Übung</h3>
+                        <p>Zur Vorbereitung auf Klassenarbeiten kann der Assistent die wichtigsten Aspekte eines Themas zusammenfassen oder spezifische Übungsaufgaben generieren. Dies unterstützt die Schülerinnen und Schüler dabei, ihren Lernprozess selbst in die Hand zu nehmen und Wissenslücken gezielt zu schließen.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <p>Testen Sie das Potenzial für Ihren Unterricht.</p>
+            <a href="http://drwk2.pythonanywhere.com/" target="_blank" class="cta-button">
+                Lern-Assistenten für eine Demo starten
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>Dieses Tool soll den Unterricht ergänzen und nicht die Lehrkraft ersetzen. Es bietet eine Chance, Lernprozesse individueller und interaktiver zu gestalten.</p>
+        </div>
+    </div>
+</body>
+</html>
